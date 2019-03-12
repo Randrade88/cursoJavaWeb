@@ -1,0 +1,1 @@
+Usando o arguments dentro de uma função, você pode receber os valores do parâmetro como se fosse um array

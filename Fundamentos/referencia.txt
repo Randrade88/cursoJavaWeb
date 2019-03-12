@@ -1,0 +1,46 @@
+/************Aula de Comentários *****/
+
+// comentario de uma linha
+
+/* abre comentário de multiplas linhas e */  fecha comentário de multiplas linhas
+
+cuidado com comentário inrrelevantes
+
+fazer códigos mais legileis.
+
+ter cuidado com os nomes que coloco no códigos, para todo mundo poder 'LER'.
+
+prezar pelo código, código limpo e de fácil leitura, colocar comentários quando for realmente necessário.
+
+
+/************Aula de Tipagem *****/
+javascript é uma linguagem fracamente tipada.
+
+As váriaveis podem alter entre os tipos.(int, string, number ...)
+
+Escolha de bons nomes é fundamental para seu código.
+
+
+/************Aula de Váriaveis e constantes *****/
+use o por padrão LET no curso.
+
+LET não pode ser redeclarada, var já pode ser redeclarada.
+
+Váriaveis const não pode ser modificada.
+
+/************Aula de Tipo number *****/
+toFixes: casas decimais.
+toString: converte para string.
+
+/************Aula de String *****/
+charAt pega a string que está na posição.
+
+
+/************Aula de Tratamentos de erros*****/
+
+Try, catch, throw, finally
+
+try: tenta executar o bloco, se apresentou algum erro ele vai enviar para o catch.
+Catch: ele vai capturar o erro gerado e vai enviar para o throw
+throw: Aqui você pode tratar o erro e customizar a mensagem e para quem poderá ver;
+finally: vai executar esse bloco de qualquer jeito, indepedente se teve erro ou não

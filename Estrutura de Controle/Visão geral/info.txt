@@ -1,0 +1,1 @@
+Com estrutura de controle você pode selecionar qual parte do codigo vai ser executado, dependendo da situação
