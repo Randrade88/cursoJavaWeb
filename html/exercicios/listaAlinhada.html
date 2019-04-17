@@ -1,0 +1,53 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li>
+            <span wp-folder>backend</span>
+        <ul>
+            <li>
+                <span wp-folder>app</span>
+                <ul>
+                    <li wm-folder>produto.js</li>
+                    <li wm-folder>usuario.js</li>
+                    <li wm-folder>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                    <span wp-folder>Config</span>
+                <ul>
+                    <li wm-folder>banco.js</li>
+                    <li wm-folder>rotas.js</li>
+                    <li wm-folder>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+            <span wp-folder>Frontend</span>
+        <ul>
+            <li>
+                    <span wp-folder>Public</span>
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+<script>
+    document.querySelectorAll('[wp-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
+    document.querySelectorAll('[wm-folder]').forEach(folder2 => {
+        folder2.onclick = function(e){
+            const c = folder2.style.display = 'none'
+        }
+    })
+</script>
