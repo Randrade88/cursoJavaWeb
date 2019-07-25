@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>XMLHttpRequest #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Estados</h1>
+
+    <script>
+        function ajax(config){
+            const xhr = new XMLHttpRequest()
+            xhr.open(config.metodo, config.url, true)
+
+            xhr.onload = e => {
+                if(xhr.status === 200){
+                    config.sucesso(xhr.response)
+                }else if(xhr.status >= 400){
+                    config.error({
+                        code: xhr.status,
+                        text: xhr.statusText
+                    })
+                }
+            }
+            xhr.send()
+        }
+        ajax({
+            url: "dados/estado.json",
+            metodo: "get",
+            sucesso(resposta){
+                const estados = JSON.parser(resposta)
+
+                const linhas = estados.map(estado => {
+                    const tdId = document.createElement('td')
+                    tdId.innerHTML = estado.id
+                })
+            }
+        })
+    </script>
+</body>
